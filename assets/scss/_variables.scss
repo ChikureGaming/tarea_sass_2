@@ -1,0 +1,17 @@
+$justify:(start:start,
+            center:center,
+            end:end,
+            around:space-around,
+            between:space-between,
+            evenly:space-evenly);
+
+$colores:(
+    primario:rgb(187, 221, 199),
+    secundario:rgb(185, 152, 152),
+    terciario:rgb(178, 225, 134)
+);
+
+$estilo:(
+    padding:15px,
+    margin:10px
+);

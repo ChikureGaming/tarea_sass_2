@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+@import "variables";
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainimg{
+    margin: auto;
+    width: 100%;
+    grid-column:span 3
+}
+
+@mixin PropiedadesTexto ($margin,$padding) {
+    margin:$margin;
+    padding:$padding;
+}
+
+@for $var from 1 through 10 {
+    
+    .col-#{$var}{
+        width: 10% * $var;
+    }
+}
+.section{
+    padding: 15px;
+    margin: 15px;
+    color:rgb(202, 46, 210) ;
+}
+
+.section-1{
+    @extend .section;
+    background-color: rgb(56, 52, 31);
+}
+
+.section-2{
+    @extend .section;
+    background-color: map-get($colores,terciario);
+}
+
+
+.section-3{
+    @include PropiedadesTexto(40px,50px)
+}
+
+.section-4{
+    @extend .section;
+    @include PropiedadesTexto(60px,75px);
+    background-color: map-get($colores,primario);
+}
+
+.h1_col_area{
+    grid-column:span 3;
+    text-align: center;
+}
+.background-color{
+    padding:map-get($estilo,padding);
+    margin:map-get($estilo,margin);
+    background-color:map-get($colores,primario);
+}
+
+@media(min-width:760px){
+    @for $var from 1 through 10 {
+    
+        .mainimg{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .col-md-#{$var}{
+            width: 10% * $var;
+        }
+    }
+}
+
+@each $clave , $var in $justify {
+
+    .justify-content-#{$clave} {
+        justify-content: $var;
+    }
+}
+
+@each $var in start,center,end {
+
+    .align-items-#{$var}{
+        align-items: $var;
+    }
+}
+
