@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description=" content="Información de contacto para iniciar comunicaciones con interesados en Proyecto Liz">
+    <meta name="keywords"  content="HTML, JS, META, Minería, Proyecto Liz, Plata, Información de Contacto">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <title>Contacto Proyecto Liz</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand mb-0 h1">
+                    <img class="d-inline-block align-top" src="../assets/img/logotipo_mineria.jpg" width="30" height="30"
+                        alt="Logotipo Empresa Copper Creek">
+                    Proyecto Liz
+                </a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item active"><a href="../pages/mapa.html" class="nav-link">Mapa</a></li>
+                        <li class="nav-item active"><a href="../pages/maquinaria.html" class="nav-link">Maquinaria</a>
+                        </li>
+                        <li class="nav-item active"><a href="../pages/presupuesto.html" class="nav-link">Presupuesto</a>
+                        </li>
+                        <li class="nav-item active"><a href="../pages/propuesta.html" class="nav-link">Propuesta</a></li>
+                        <li class="nav-item active"><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </ul>
+        </nav>
+    </header>
+
+    <main class="gridmain">
+            <img class="mainimg" src="../assets/img/proyecto_liz_2022.jpg" alt="">
+            
+            <form class="formcontainer">
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="name" class="form-control" />
+                      <label class="form-label" for="Name">Nombre(s)</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control" />
+                      <label class="form-label" for="lastName">Apellidos</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="company" class="form-control" />
+                  <label class="form-label" for="company">Nombre de la Compañía</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="address" class="form-control" />
+                  <label class="form-label" for="address">Dirección</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="email" id="form6Example5" class="form-control" />
+                  <label class="form-label" for="form6Example5">Email</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="number" id="phone" class="form-control" />
+                  <label class="form-label" for="phone">Teléfono</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="additionalInfo" rows="4"></textarea>
+                  <label class="form-label" for="additionalInfo">Información adicional</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-4">Envía Información</button>
+              </form>
+    </main>
+
+    <footer class="bg-light text-center">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Suscríbete para más información</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="correoUsuario" class="form-control" />
+                                <label class="form-label" for="correoUsuario">Correo Electrónico</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-4">
+                                Suscribirse
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Minera Copper Creek S.A. De C.V.
+            <a class="text-dark" href="./index.html">Proyecto Liz</a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</html>
